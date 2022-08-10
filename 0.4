@@ -1,0 +1,18 @@
+title Untitled
+
+Selain->Palvelin: POST https://studies.cs.helsinki.fi/exampleapp/notes
+Palvelin->Selain: HTTP 302 redirect
+note over Palvelin:
+Palvelin lähettää status 302, joka käskee selainta
+lataamaan sivun uudestaan.
+end note
+
+Selain->Palvelin: GET https://studies.cs.helsinki.fi/exampleapp/notes
+Palvelin->Selain: HTML-koodi
+Selain->Palvelin: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Palvelin->Selain: main.css
+Selain->Palvelin: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Palvelin->Selain: main.js
+Selain->Palvelin: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Palvelin->Selain: data.json
+
